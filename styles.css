@@ -179,10 +179,14 @@ footer {
 
 .rect {
     background-color: #FFFDD0;
+    max-width: 800px;
     border-style: solid;
     border-width: 3px;
     border-color: #2E00FF;
     color: #2E00FF;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
 }
 
@@ -220,4 +224,8 @@ footer {
     justify-content: center;
     clear: left;
     margin: 0 auto;
+}
+
+poster{
+    padding: 20px;
 }
