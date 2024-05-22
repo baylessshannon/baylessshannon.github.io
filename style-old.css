@@ -1,7 +1,7 @@
 body {
     background-color: #FFFDD0;
     opacity: 1;
-    background-image: linear-gradient(#000000 0.8px, transparent 0.8px), linear-gradient(to right, #000000 0.8px, #FFFDD0 0.8px);
+    background-image:  linear-gradient(#000000 0.8px, transparent 0.8px), linear-gradient(to right, #000000 0.8px, #FFFDD0 0.8px);
     background-size: 16px 16px;
     font-family: Helvetica, sans-serif;
     padding: 20px;
@@ -14,6 +14,8 @@ header {
     border-color: #2E00FF;
     color: #2E00FF;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    background: #FFFDD0;
+    color: #2E00FF;
     padding: 1em 0;
     text-align: center;
     font-family: Danfo;
@@ -21,19 +23,16 @@ header {
     max-width: 800px;
     margin: auto;
 }
-
-a {
+a{
     text-decoration: none;
     color: #2E00FF;
 }
-
-h1 {
+h1{
     font-family: "Holtwood One SC", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: 0;
+    margin:0;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -118,10 +117,10 @@ footer {
     padding: 1em 0;
     font-family: Helvetica, sans-serif;
 }
-
 .button-54 {
     font-family: "Helvetica", sans-serif;
     font-size: 16px;
+    /* letter-spacing: 2px; */
     text-decoration: none;
     text-transform: uppercase;
     color: #2E00FF;
@@ -133,21 +132,29 @@ footer {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-}
+  }
 
-.button-54:active {
+  .button-54:active {
     box-shadow: 0px 0px 0px 0px;
     top: 5px;
     left: 5px;
-}
+  }
+  
+  @media (min-width: 768px) {
+    .button-54 {
+      padding: 0.25em 0.75em;
+    }
+  }
 
-.about-container {
+  .about-container {
+    /* align-items: center; */
     display: flex;
     flex-direction: row;
     padding: 20px;
     max-width: 800px;
     border-radius: 8px;
     justify-content: center;
+    clear: left;
     margin: 0 auto;
 }
 
@@ -176,6 +183,7 @@ footer {
     text-align: left;
 }
 
+
 .rect {
     background-color: #FFFDD0;
     max-width: 800px;
@@ -189,7 +197,7 @@ footer {
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
 }
 
-.design-container, .contact-container, .photography-container {
+.design-container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -197,46 +205,34 @@ footer {
     max-width: 800px;
     border-radius: 8px;
     justify-content: center;
+    clear: left;
     margin: 0 auto;
 }
 
-poster img {
+.contact-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    justify-content: center;
+    clear: left;
+    margin: 0 auto;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    header, .about-container, .design-container, .contact-container, .photography-container {
-        padding: 10px;
-        width: 100%;
-    }
-    
-    .about-container, .design-container, .contact-container, .photography-container {
-        flex-direction: column;
-        padding: 10px;
-    }
+.photography-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    justify-content: center;
+    clear: left;
+    margin: 0 auto;
+}
 
-    .column.about-photo img {
-        max-width: 100%;
-        margin: 0 0 20px 0;
-    }
-
-    .portfolio-item {
-        width: calc(100% - 2em);
-        margin: 1em 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0.5em 0;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .button-54 {
-        font-size: 14px;
-        padding: 0.5em 1em;
-    }
+poster img{
+    padding: 20px;
 }
