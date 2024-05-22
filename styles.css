@@ -51,6 +51,7 @@ nav ul li a {
 
 .hero {
 	padding: 2em 0;
+	text-align: center;
 }
 
 .hero h1 {
@@ -150,6 +151,7 @@ footer {
 	border-radius: 8px;
 	justify-content: center;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .column.about-photo img {
@@ -196,57 +198,66 @@ footer {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	/* padding: 20px; */
 	max-width: 800px;
 	border-radius: 8px;
 	justify-content: center;
 	margin: 0 auto;
+	text-align: center;
 }
 
-
-.poster img{
+.poster img {
 	padding: 10px;
-    max-width: 200px;
-}
-
-.solo-poster img{
-	padding: 10px;
-    max-width: 60%;
-    display: flex;
-	flex-direction: column;
-    align-items: center;
+	max-width: 200px;
+    margin: 0 auto;
     justify-content: center;
+}
+
+.solo-poster img {
+	padding: 10px;
+	max-width: 60%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	margin: 0 auto;
+    justify-content: center;
 }
 
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+	body {
+		text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        position: absolute;
+	}
+
 
 	header,
 	.about-container,
 	.design-container,
 	.contact-container,
-	.photography-container {
-		padding: 10px;
+	.photography-container 
+    .rect{
+		/* padding: 10px; */
 		width: 100%;
-        align-items: center;
-        margin: auto;
-        flex-direction: column;
-	}
-
-	.about-container,
-	.design-container,
-	.contact-container,
-	.photography-container {
+		align-items: center;
+		margin: auto;
 		flex-direction: column;
-		padding: 10px;
+		text-align: center;
+        justify-content: center;
 	}
 
 	.column.about-photo img {
 		max-width: 50%;
-		margin: 0 0 20px 0;
+		margin: auto 0;
+        justify-content: center;
+        display: block;
 	}
+
 
 	.portfolio-item {
 		width: calc(100% - 2em);

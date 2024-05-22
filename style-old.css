@@ -236,3 +236,48 @@ footer {
 poster img{
     padding: 20px;
 }
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+header,
+.about-container,
+.design-container,
+.contact-container,
+.photography-container {
+    /* padding: 10px; */
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.column.about-photo img {
+    max-width: 50%;
+    /* margin: 0 0 20px 0; */
+}
+
+.portfolio-item {
+    width: calc(100% - 2em);
+    margin: 1em 0;
+}
+
+nav ul li {
+    display: block;
+    margin: 0.5em 0;
+}
+
+.hero h1 {
+    font-size: 2em;
+}
+
+.button-54 {
+    font-size: 14px;
+    padding: 0.5em 1em;
+}
+
