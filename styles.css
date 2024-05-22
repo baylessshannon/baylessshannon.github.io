@@ -203,9 +203,17 @@ footer {
 	margin: 0 auto;
 }
 
-poster img {
-	padding: 20px;
+
+.poster img{
+	padding: 10px;
+    max-width: 200px;
 }
+
+.solo-poster img{
+	padding: 10px;
+    max-width: 60%;
+}
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
