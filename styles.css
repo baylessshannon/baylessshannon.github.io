@@ -230,6 +230,8 @@ footer {
 	.photography-container {
 		padding: 10px;
 		width: 100%;
+        align-items: center;
+        margin: 0 auto;
 	}
 
 	.about-container,
