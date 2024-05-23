@@ -64,6 +64,10 @@ section {
 	text-align: center;
 }
 
+.about-photo,
+.about-text{
+	display: inline-block;
+}
 #portfolio {
 	display: flex;
 	flex-wrap: wrap;
@@ -143,40 +147,33 @@ footer {
 	left: 5px;
 }
 
-.about-container {
-	display: flex;
-	flex-direction: row;
-	padding: 20px;
-	max-width: 800px;
-	border-radius: 8px;
-	justify-content: center;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.column.about-photo img {
+.about-photo img {
 	max-width: 300px;
-	margin-right: 20px;
+	margin: 20px;
 	border-style: solid;
 	border-width: 3px;
 	border-color: #2E00FF;
+
 }
 
-.column.about-text {
-	max-width: 600px;
-	text-align: left;
-}
-
-.about-text h1 {
-	margin-top: 0;
-	background-color: #FFFDD0;
-}
-
-.about-text p {
-	margin-top: 0;
+.about-text{
 	line-height: 1;
-	background-color: #FFFDD0;
-	text-align: left;
+	margin: 20px;
+	max-width: 100%;
+	/* max-width: 500px; */
+	text-align: justify;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+}
+
+.poster img {
+	padding: 10px;
+	max-width: 200px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .rect {
@@ -190,6 +187,18 @@ footer {
 	justify-content: center;
 	margin: 0 auto;
 	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+}
+
+.about-container {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	/* padding: 20px; */
+	max-width: 800px;
+	border-radius: 8px;
+	justify-content: center;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .design-container,
@@ -227,7 +236,7 @@ footer {
 
 h1.page-title{
     font-size: 30pt;
-    padding-top: 10px;
+    padding-top: 10pt;
 }
 
 
@@ -282,4 +291,9 @@ h1.page-title{
 		font-size: 14px;
 		padding: 0.5em 1em;
 	}
+    .about-text p {
+        width: 80%;
+        margin: auto 0;
+        justify-content: center;
+    }
 }
