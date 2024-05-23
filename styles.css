@@ -29,6 +29,7 @@ a {
 
 a.blue{
 	text-decoration: underline;
+	max-width: 100%;
 }
 
 h1 {
